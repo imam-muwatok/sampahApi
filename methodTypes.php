@@ -77,6 +77,7 @@ class Types
 			header('Location: ' . $_SERVER['HTTP_REFERER']);
 			header('Content-Type: application/json');
 			echo json_encode($response);
+			header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 		}
 
@@ -96,7 +97,7 @@ class Types
 		{
 			$response=array(
 				'status' => 0,
-				'message' =>'Mahasiswa Deletion Failed.'
+				'message' =>'Types Deletion Failed.'
 			);
 		}
 		header('Content-Type: application/json');
