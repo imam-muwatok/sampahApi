@@ -1,0 +1,5 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^types/?$ types.php [NC,L]
+RewriteRule ^materials/?$ materials.php [NC,L]
+RewriteRule ^types/([0-9]+)/?$ types.php?id=$1 [NC,L]
+RewriteRule ^materials/([0-9]+)/?$ materials.php?id=$1 [NC,L]
