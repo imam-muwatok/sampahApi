@@ -76,6 +76,7 @@ class Materials
 			}
 			header('Content-Type: application/json');
 			echo json_encode($response);
+			header('Location: ' . $_SERVER['HTTP_REFERER']);
 		}
 
 
@@ -99,6 +100,7 @@ class Materials
 		}
 		header('Content-Type: application/json');
 		echo json_encode($response);
+		header('Location: ' . $_SERVER['HTTP_REFERER']);
 	}
 }
 
